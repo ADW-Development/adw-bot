@@ -3,7 +3,7 @@ import requests
 URLchecks = []
 
 '''
-add urls that need to be checked here
+Add urls that need to be checked here.
 example: https://adw-development.github.io/newpage
 '''
 
@@ -16,5 +16,5 @@ for url in URLchecks:
             print(f"The URL: {url} exists")
         else:
             print(f"The page: {url} has an error. check the html or css, http status: {main_response.status_code}")
-     except requests.exceptions.RequestException as error:
+    except requests.exceptions.RequestException as error:
         print(f"An error occurred while checking the url: {error}")   
