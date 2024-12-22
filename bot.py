@@ -10,7 +10,7 @@ try:
     if "User-agent: ADW-bot\nDisallow:" in robots_content:
         print("access allowed for ADW to bot.")
         main_response = requests.get(mainURL)
-        if main_response.status_code ==200:
+        if main_response.status_code == 200:
             print("fetched the site sucsessfully.")
             print (main_response)
         else:
