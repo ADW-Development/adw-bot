@@ -1,28 +1,20 @@
 import requests
 
-robotsURL = "https://adw-development.github.io/public/robots.txt"
-mainURL = "https://adw-development.github.io/"
+URLchecks = []
 
-try:
-    response = requests.get(robotsURL)
-    response.raise_for_status()
-    robots_content = response.text
-    if "User-agent: ADW-bot\nDisallow:" in robots_content:
-        print("access allowed for ADW to bot.")
-        main_response = requests.get(mainURL)
+'''
+add urls that need to be checked here
+example: https://adw-development.github.io/newpage
+'''
+
+print("conducting url checks...")
+
+for url in URLchecks:
+    try:
+        main_response = requests.get(url)
         if main_response.status_code == 200:
-            print("fetched the site sucsessfully.")
-            print (main_response)
+            print(f"The URL: {url} exists")
         else:
-            print(f"access allowed but failed to fetch site. https status: {main_response.status_code}")
-    elif "Disallow: /" in robots_content:
-        print("access error.")
-    else:
-        main_response = requests.get(mainURL)
-        if main_response.status_code:
-            print("fetched the site sucsessfully")
-        else:
-            print(f"access allowed but failed to fetch site. https status: {main_response.status_code}")
-
-except requests.exceptions.RequestException as e:
-    print(f"an error occurred {e}")
+            print(f"The page: {url} has an error. check the html or css, http status: {main_response.status_code}")
+     except requests.exceptions.RequestException as error:
+        print(f"An error occurred while checking the url: {error}")   
