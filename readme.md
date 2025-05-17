@@ -26,9 +26,8 @@ A Python script that checks URL availability while respecting `robots.txt` rules
 1. Edit the URLchecks list in the script to include the URLs you want to check
 2. Run the script:
 
-```
-python bot.py
-```
+   ```bash
+   python bot.py
 
 The script will:
 + Attempt to find and parse robots.txt for each domain
@@ -38,16 +37,15 @@ The script will:
 
 # Sample Output
 
-bash
-```
-Conducting URL checks...
-robots.txt found at https://adw-development.github.io/public/robots.txt
-ADW-bot is allowed to crawl https://adw-development.github.io/teddy.html
-The URL: https://adw-development.github.io/teddy.html was successfully reached. no errors while doing so.
-robots.txt found at https://adw-development.github.io/public/robots.txt
-ADW-bot is allowed to crawl https://adw-development.github.io/
-The URL: https://adw-development.github.io/ was successfully reached. no errors while doing so.
-```
+   ```bash
+   Conducting URL checks...
+   robots.txt found at https://adw-development.github.io/public/robots.txt
+   ADW-bot is allowed to crawl https://adw-development.github.io/teddy.html
+   The URL: https://adw-development.github.io/teddy.html was successfully reached. no errors while doing so.
+   robots.txt found at https://adw-development.github.io/public/robots.txt
+   ADW-bot is allowed to crawl https://adw-development.github.io/
+   The URL: https://adw-development.github.io/ was successfully reached. no errors while doing so.
+   ```
 
 # Customization
 + Modify the sleep time at the end of the script (if you want to)
