@@ -37,7 +37,7 @@ The script will:
 
 # Sample Output
 
-   ```bash
+   ```
    Conducting URL checks...
    robots.txt found at https://adw-development.github.io/public/robots.txt
    ADW-bot is allowed to crawl https://adw-development.github.io/teddy.html
