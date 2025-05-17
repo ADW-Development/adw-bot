@@ -2,7 +2,7 @@ import time
 import requests
 from urllib.parse import urlparse, urlunparse
 
-URLchecks = ["https://adw-development.github.io/teddy.html", "https://adw-development.github.io/"] # or whatever.
+URLchecks = ["https://adw-development.github.io/teddy.html", "https://adw-development.github.io/"] # or whatever. replace with the urls you need to check.
 
 headers = {
     "User-Agent": "ADW-bot"
