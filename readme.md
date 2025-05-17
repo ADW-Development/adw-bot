@@ -26,7 +26,6 @@ A Python script that checks URL availability while respecting `robots.txt` rules
 1. Edit the URLchecks list in the script to include the URLs you want to check
 2. Run the script:
 
-bash
 ```
 python bot.py
 ```
@@ -52,5 +51,4 @@ The URL: https://adw-development.github.io/ was successfully reached. no errors 
 
 # Customization
 + Modify the sleep time at the end of the script (if you want to)
-
 + Add additional URL checks to the URLchecks list (becuase, you need to replace the whole thing.)
