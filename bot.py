@@ -2,7 +2,7 @@ import time
 import requests
 from urllib.parse import urlparse, urlunparse
 
-URLchecks = ["https://adw-development.github.io/teddy.html", "https://adw-development.github.io/"]
+URLchecks = ["https://adw-development.github.io/teddy.html", "https://adw-development.github.io/"] # or whatever.
 
 headers = {
     "User-Agent": "ADW-bot"
