@@ -1,6 +1,6 @@
 # URL Availability Checker
 
-A Python script that checks URL availability while respecting `robots.txt` rules, designed for ADW developers and web developers who need to verify the accessibility of their web content.
+A Python script that checks URL availability while respecting `robots.txt` rules, designed for ADW developers who need to verify the accessibility of their web content.
 
 # Features
 
